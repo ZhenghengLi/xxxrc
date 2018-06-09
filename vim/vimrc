@@ -1,0 +1,104 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""" Vundle
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-airline/vim-airline'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'Align'
+Plugin 'Yggdroot/indentLine'
+Plugin 'yukunlin/auto-pairs'
+Plugin 'stanangeloff/php.vim'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin '2072/php-indenting-for-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'gregsexton/gitv'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'rsmenon/vim-mathematica'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:airline#extensions#tabline#enabled = 1
+let g:indentLine_color_term = 239
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_conceal = 0
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set cindent
+set cinoptions=g-1
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set cursorline
+set ruler
+set confirm
+set number
+set nobackup
+set noswapfile
+"set ignorecase
+set hlsearch
+set incsearch
+set statusline=%F%m%r%h%w\ [TYPE=%Y]\ [Line:%l/%L,Column:%c][%p%%]\
+set laststatus=2
+set scrolloff=3
+set iskeyword+=_,$,@,%,#,-
+set smartindent
+set gdefault
+set enc=utf-8
+filetype on
+filetype plugin on
+filetype indent on
+
+set background=dark
+set splitbelow
+set splitright
+"colorscheme evening
+colorscheme lucius
+"colorscheme molokai
+"let g:molokai_original = 1
+
+let &termencoding=&encoding
+set fileencodings=utf-8,gb18030,gbk,gb2312,big5
+set scrolloff=3
+set clipboard=unnamedplus
+
+autocmd BufNewFile,BufRead *.icc setfiletype cpp
+hi MatchParen cterm=none ctermbg=green ctermfg=blue
+
