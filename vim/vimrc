@@ -26,7 +26,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'Align'
-Plugin 'Yggdroot/indentLine'
+"Plugin 'Yggdroot/indentLine'
 Plugin 'yukunlin/auto-pairs'
 Plugin 'stanangeloff/php.vim'
 Plugin 'shawncplus/phpcomplete.vim'
@@ -93,8 +93,8 @@ set backspace=2
 set background=dark
 set splitbelow
 set splitright
-colorscheme evening
-"colorscheme lucius
+"colorscheme evening
+colorscheme lucius
 "colorscheme molokai
 "colorscheme blackboard
 "let g:molokai_original = 1
